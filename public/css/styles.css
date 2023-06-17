@@ -1,0 +1,142 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    width:100vw;
+    font-size: 12px;
+    background-color: #E2E7E6;
+}
+
+main{
+    width:90vw;
+    margin: 0 auto;
+}
+
+header {
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    background-color: #eac926;
+    width: 95vw;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+}
+span {
+    font-size: 1rem;
+}
+
+li {
+    font-size: 1rem;
+}
+
+footer ul {
+    list-style-type:none;
+    text-align: center;
+    padding-inline-start: 0px;
+}
+
+footer i {
+    font-size: 2em;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+footer li {
+    margin:20px 10px;
+}
+
+footer span.span-bold {
+    font-size: 1.5em;
+    color : #474B4A;
+}
+
+div.mag-glass {
+    background-color: #E5EFEC; 
+    margin-left:0px; 
+    margin-bottom: 20px; 
+    margin-top:3px; 
+    border-radius: 5px;
+    width: 10vw;
+    height: 5vh;
+    text-align: center;
+    display:inline;
+}
+
+div.mag-glass i {
+    padding: 5px;
+}
+
+div.burger-menu {
+    color:white;
+    background-color: blue; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 35vw;
+    border-radius: 5px;
+    width: 20vw;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.titulares-header {
+    font-size: 2rem;
+}
+
+.precios {
+    font-size: 1.5rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.descuentos {
+    font-size: 1.33rem;
+    color:green;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.descripciones {
+    font-size: 1.33rem;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    color : #474B4A;
+}
+
+.regular-banner {
+    width: 100%;
+}
+
+.regular-banner img{
+    width:100%;
+}
+
+.div-productos div.div-productos-2 {
+    background: white;
+    margin-bottom: 30px;
+}
+
+.div-productos img {
+    width:100%;
+}
+
+.textos2 {
+    border-top: solid 1px #ebebeb;
+    
+}
+
+.div-productos div div.textos {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+.ico-camion {
+    color:green;
+    border: solid 1px;
+    width: 20px;
+    height: 20px;
+    padding: 2px;    
+    border-radius: 100%;
+}
