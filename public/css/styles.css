@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
 html {
     font-family: 'Roboto', sans-serif;
     width:100vw;
@@ -6,9 +12,11 @@ html {
 }
 
 main{
-    width:90vw;
+    width:100vw;
     margin: 0 auto;
 }
+
+
 
 nav {
     display: none;
@@ -18,9 +26,51 @@ header {
     /*font-family: Arial, Helvetica, sans-serif;*/
     font-family: 'Roboto', sans-serif;
     background-color: #eac926;
-    width: 95vw;
+    width: 100vw;
     font-size: 16px;
     padding-bottom: 10px;
+}
+
+.head-div-1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+header img.logo {
+    width: 50%;
+    padding: 5px;
+    display: inline;
+    box-sizing: border-box;
+    
+}
+
+header input.search-box {
+    width: 40%;
+    margin-top: 0px;
+    display: inline;   
+    box-sizing: border-box; 
+    border: 0px solid black;  
+    border-radius: 5px; 
+}
+
+div.mag-glass {
+    background-color: white; 
+    /*
+    margin-left:0px; 
+    margin-bottom: 20px; 
+    margin-top:3px; 
+    
+    */
+    border-radius: 5px;
+    width: 10%;
+    text-align: center;
+    display:inline;
+}
+
+header div div.div-compraencuotas {
+    margin:auto;
+    text-align:center;
 }
 
 p {
@@ -55,28 +105,15 @@ footer span.span-bold {
     color : #474B4A;
 }
 
-div.mag-glass {
-    background-color: #E5EFEC; 
-    margin-left:0px; 
-    margin-bottom: 20px; 
-    margin-top:3px; 
-    border-radius: 5px;
-    width: 10vw;
-    height: 5vh;
-    text-align: center;
-    display:inline;
-}
 
-div.mag-glass i {
-    padding: 5px;
-}
 
 div.burger-menu {
     color:white;
     background-color: blue; 
+    margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 35vw;
+    
     border-radius: 5px;
     width: 20vw;
     text-align: center;
@@ -92,6 +129,7 @@ div.burger-menu {
     font-size: 1.5rem;
     margin-top: 0px;
     margin-bottom: 0px;
+    /*width: 30%;*/
 }
 
 .descuentos {
@@ -99,6 +137,7 @@ div.burger-menu {
     color:green;
     margin-top: 0px;
     margin-bottom: 0px;
+    /*width: 70%;*/
 }
 
 .descripciones {
@@ -118,13 +157,31 @@ div.burger-menu {
     width:100%;
 }
 
-.div-productos div.div-productos-2 {
+section.div-productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section.div-productos div.div-productos-2 {
     background: white;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+
 }
 
 .div-productos img {
     width:100%;
+}
+
+.div-2textos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.textos {
+    position: relative;
 }
 
 .textos2 {
@@ -137,29 +194,78 @@ div.burger-menu {
     padding: 15px;
 }
 
+
 .ico-camion {
-    color:green;
-    border: solid 1px;
-    width: 20px;
-    height: 20px;
-    padding: 2px;    
-    border-radius: 100%;
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    /*margin-left: 70vw;*/
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    
 }
+
+
 
 @media (min-width:361px){
     /*Tablets*/
+    header img.logo {
+        width: 25%;   
+    }    
+    header input.search-box {
+        width: 20%;
+    }
+    div.mag-glass {
+        width: 5%;
+    }    
+
+    header div div.div-compraencuotas {
+        width: 40%;
+    }
+
+    div.div-productos-2 {
+        width:40%;
+    }
+    
+
 
     .descripciones {
         display:block;
     }
-        
+
     .div-productos-2 {
         box-shadow: 0px 0px 10px rgb(100,100,100);
     }
 
     nav {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        /*margin: left 0px;        */
     }
+
+    nav ul li {
+        padding: 5px;
+    }
+
+    nav ul.ul1 {
+        display: flex;
+        justify-content: flex-start;
+        list-style-type:none;       
+    }
+
+    nav ul.ul2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style-type:none; 
+    }    
 
     .burger-menu {
         display: none;
@@ -168,6 +274,11 @@ div.burger-menu {
 
 @media (min-width:769px){
     /*Laptop*/
+    
+    div.div-productos-2 {
+        width:20%;
+    } 
+       
     .descripciones {
         display:block;
     }
@@ -177,8 +288,27 @@ div.burger-menu {
     }
 
     nav {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        /*margin: left 0px;        */
     }
+
+    nav ul li {
+        padding: 5px;
+    }
+
+    nav ul.ul1 {
+        display: flex;
+        justify-content: flex-start;
+        list-style-type:none;       
+    }
+
+    nav ul.ul2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style-type:none; 
+    }   
 
     .burger-menu {
         display: none;
