@@ -45,6 +45,10 @@ header img.logo {
     
 }
 
+h3 {
+    margin: 10px;
+}
+
 header input.search-box {
     width: 40%;
     margin-top: 0px;
@@ -212,7 +216,57 @@ section.div-productos div.div-productos-2 {
     
 }
 
+.form-reg-user {
+    padding:10px;
+}
 
+.form-reg-user .regular-label,.regular-text {
+    margin:10px;
+    border-radius: 5px;
+    width: 90%;
+    padding: 10px 15px;
+    border: none;
+}
+
+.form-reg-user input.file {
+    margin: 20px;
+}
+
+.form-reg-user#FechaNac {
+    font-weight:bold;
+}
+
+.form-reg-user button {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    /*margin-left: 5vw;*/
+    border-radius: 5px;
+    border:none;
+    background-color: blue;
+    color: white;
+}
+
+.div-radio {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.div-check {
+    display:flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.div-check div {
+    padding:10px;
+}
+
+.div-check input {
+    display: inline;
+}
 
 @media (min-width:361px){
     /*Tablets*/
