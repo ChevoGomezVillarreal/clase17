@@ -153,6 +153,7 @@ div.burger-menu {
     display:none;
 }
 
+
 .regular-banner {
     width: 100%;
 }
@@ -196,6 +197,10 @@ section.div-productos div.div-productos-2 {
 .div-productos div div.textos {
     border-top: solid 1px #ebebeb;
     padding: 15px;
+}
+
+.div-productos-2:hover .descripciones {
+    display:block;
 }
 
 
