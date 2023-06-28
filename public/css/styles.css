@@ -6,13 +6,17 @@
 
 html {
     font-family: 'Roboto', sans-serif;
-    width:100vw;
     font-size: 12px;
     background-color: #E2E7E6;
+    box-sizing: border-box;
+}
+
+body {
+    margin:10px;
+    width: 85%;
 }
 
 main{
-    width:100vw;
     margin: 0 auto;
 }
 
@@ -26,20 +30,19 @@ header {
     /*font-family: Arial, Helvetica, sans-serif;*/
     font-family: 'Roboto', sans-serif;
     background-color: #eac926;
-    width: 100vw;
+    width: 100%;
     font-size: 16px;
     padding-bottom: 10px;
 }
 
 .head-div-1 {
+    padding: 10px 0px;
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
 }
 
 header img.logo {
-    width: 50%;
-    padding: 5px;
+    width: 40%;
     display: inline;
     box-sizing: border-box;
     
@@ -67,7 +70,7 @@ div.mag-glass {
     
     */
     border-radius: 5px;
-    width: 10%;
+    width: 8%;
     text-align: center;
     display:inline;
 }
@@ -89,6 +92,8 @@ li {
 }
 
 footer ul {
+    display: flex;
+    flex-direction:column;
     list-style-type:none;
     text-align: center;
     padding-inline-start: 0px;
@@ -176,7 +181,7 @@ section.div-productos div.div-productos-2 {
 }
 
 .div-productos img {
-    width:100%;
+    width:95%;
 }
 
 .div-2textos {
@@ -203,6 +208,9 @@ section.div-productos div.div-productos-2 {
     display:block;
 }
 
+.div-productos-2:hover {
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
 
 .ico-camion {
     color: #39b54a;
@@ -219,6 +227,10 @@ section.div-productos div.div-productos-2 {
     right: 20px;
     top: -15px;
     
+}
+
+.ico-camion:hover {
+    transform: rotate(-0.25turn);
 }
 
 .form-reg-user {
@@ -273,6 +285,14 @@ section.div-productos div.div-productos-2 {
     display: inline;
 }
 
+.but-submit:hover {
+    background-color: #0022AA;
+}
+
+footer i:hover {
+    color:yellow;
+}
+
 @media (min-width:361px){
     /*Tablets*/
     header img.logo {
@@ -291,16 +311,6 @@ section.div-productos div.div-productos-2 {
 
     div.div-productos-2 {
         width:40%;
-    }
-    
-
-
-    .descripciones {
-        display:block;
-    }
-
-    .div-productos-2 {
-        box-shadow: 0px 0px 10px rgb(100,100,100);
     }
 
     nav {
@@ -337,14 +347,6 @@ section.div-productos div.div-productos-2 {
     div.div-productos-2 {
         width:20%;
     } 
-       
-    .descripciones {
-        display:block;
-    }
-
-    .div-productos-2 {
-        box-shadow: 0px 0px 10px rgb(100,100,100);
-    }
 
     nav {
         display: flex;
@@ -372,4 +374,10 @@ section.div-productos div.div-productos-2 {
     .burger-menu {
         display: none;
     }    
+
+    footer ul {
+        flex-direction:row;    
+    }
+
+
 }
