@@ -179,7 +179,7 @@ section.div-productos {
 section.div-productos div.div-productos-2 {
     background: white;
     margin-bottom: 10px;
-    min-height: 400px;
+    
 }
 
 .div-productos img {
@@ -194,6 +194,7 @@ section.div-productos div.div-productos-2 {
 
 .textos {
     position: relative;
+    min-height: 100px;
 }
 
 .textos2 {
