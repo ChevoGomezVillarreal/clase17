@@ -13,7 +13,7 @@ html {
 
 body {
     margin:10px;
-    width: 85%;
+    width: 100%;
 }
 
 main{
@@ -156,6 +156,7 @@ div.burger-menu {
     margin-bottom: 0px;
     color : #474B4A;
     display:none;
+    min-height: 20px;
 }
 
 
@@ -177,7 +178,7 @@ section.div-productos {
 section.div-productos div.div-productos-2 {
     background: white;
     margin-bottom: 10px;
-
+    min-height: 400px;
 }
 
 .div-productos img {
