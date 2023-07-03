@@ -229,7 +229,7 @@ section.div-productos div.div-productos-2 {
     position: absolute;
     right: 20px;
     top: -15px;
-    
+    transition: all 2s;
 }
 
 .ico-camion:hover {
