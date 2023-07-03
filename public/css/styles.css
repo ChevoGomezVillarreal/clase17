@@ -24,6 +24,7 @@ main{
 
 nav {
     display: none;
+    padding-right: 10px;
 }
 
 header {
